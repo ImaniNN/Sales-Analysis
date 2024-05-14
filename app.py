@@ -18,7 +18,8 @@ app.layout = html.Div(
             children = [
                 dbc.Col(
                     children = sidebar,
-                    width = 1
+                    width = 1,
+                    className = "bg_light"
                 ),
                 dbc.Col(
                     children = [
