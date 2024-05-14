@@ -8,7 +8,7 @@ import dash_ag_grid as dag
 
 dash.register_page(__name__, path = "/salesanalysis", title = "Sales Analysis")
 
-superstore= pd.read_csv("C:/Desktop/ICDS/Sample - Superstore.csv", encoding='latin1')
+superstore= pd.read_csv("data\Sample - Superstore.csv", encoding='latin1')
 superstore['Order Date'] = pd.to_datetime(superstore['Order Date'], format = "%m/%d/%Y")
 
 # 1. Total Sales by Category
